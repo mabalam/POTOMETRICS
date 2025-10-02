@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* default styles for H1, H2, .. H6 */
+h1 {
+  color: #2c3e50;
+}
+
+h3 {
+  color: #7f8c8d;
+}
+
+/* default styles for paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px 0; /* Add vertical padding to paragraphs */
+}
+
+/* default styles for lists */
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* default styles for links */
+a {
+  color: #232324;
+  text-decoration: none;
+}
+/* default styles for links on hover */
+a:hover {
+  text-decoration: underline;
+}
+/* default styles for buttons */
+button,
+#hero .btn {
+  padding: 10px 15px;
+  background-color: #504e4e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(230, 103, 34, 0.15);
+  transition: background 0.2s;
+}
+
+/* Button hover effect */
+button:hover,
+#hero .btn:hover {
+  background-color: #d35400; /* orange on hover */
+}
+
+/* front text */
+#header {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+/* Logo */
+.logo {
+  height: 90px;
+  border: 0;
+}
+
+/* Navigation banner styles */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(44, 38, 38);
+}
+/* Navigation banner */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Navigation list */
+#nav li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+/*styling for navigation links */
+#nav li a {
+  text-decoration: none;
+  color: #f2eeee;
+  font-weight: 200;
+  font-size: 18px;
+  position: relative; /* Needed for underline effect */
+}
+
+/* Navigation links hover effect */
+#nav li a:hover {
+  color: #fffefe;
+}
+
+/* Navigation links active state */
+#nav li a:hover::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #e67e22;
+  position: absolute;
+  left: 20%;
+  bottom: -3px;
+  border-radius: 2px;
+}
+
+/* Active link styling */
+#nav li a:hover,
+#nav li a.active {
+  font-weight: bold;
+}
+/* Active link underline effect */
+#nav li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #e67e22;
+  bottom: -5px;
+  left: 20px;
+}
+
+/* Hero section */
+#hero {
+  text-align: left;
+  padding: 50px 250px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Hero section heading */
+#hero h4 {
+  font-size: 18px;
+  color: #2c3e50;
+  padding-bottom: 15px;
+}
+/* Hero section subheading */
+#hero h1 {
+  font-size: 36px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Hero section paragraph */
+#hero button {
+  padding: 14px 80px 14px 80px;
+  background-color: #e67e22;
+  color: #088178;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#blogs {
+  text-align: left;
+  padding: 50px 250px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Table styles */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #0000ff6f;
+}
+
+/* Table header styles */
+td {
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+/*Contact section styles */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.contact-inputs {
+  width: 100%;
+  height: 25px;
+  border: #d35400;
+  outline: #088178;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #4a95c7;
+  border-radius: 50px;
+  padding-top: 10px;
+}
+.contact-left textarea {
+  width: 100%;
+  height: 100px;
+  border: #d35400;
+  outline: #d35400;
+  padding-left: 255px;
+  font-weight: 500;
+  color: #bdc3c7;
+  border-radius: 50px;
+}
+
+.contact-inputs:focus {
+  border-color: #088178;
+  outline: #088178;
+}
+.contact-inputs::placeholder {
+  color: #088178;
+  font-weight: 500;
+  font-size: 18px;
+}
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #088178;
+  color: #fff;
+  border: #088178;
+  border-radius: 50px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 20px;
+  width: 500px;
+  height: 250px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #f7f5f5;
+  color: black;
+  display: block;
+}
