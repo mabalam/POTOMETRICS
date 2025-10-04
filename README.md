@@ -1,6 +1,7 @@
 ## Notes
 
 - Next:
+
   - github hosting
   - domain registration
 
@@ -51,3 +52,5 @@
 
 - Trading Economics
 - Bloomberg Data
+- https://bilello.blog
+- noahpinion
