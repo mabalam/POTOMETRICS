@@ -279,3 +279,45 @@ footer {
   color: black;
   display: block;
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav li {
+    padding: 10px 0;
+  }
+  #hero {
+    padding: 20px;
+  }
+  #hero h1 {
+    font-size: 28px;
+  }
+  #hero p {
+    font-size: 14px;
+  }
+  #blogs {
+    padding: 20px;
+  }
+  .contact-container {
+    padding: 10px;
+  }
+  .contact-inputs {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .contact-left textarea {
+    width: 100%;
+    padding-left: 15px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
