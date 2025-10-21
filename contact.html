@@ -1,6 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MDSEK951PV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MDSEK951PV");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
@@ -17,8 +31,10 @@
     <my-header></my-header>
     <div class="contact-container">
       <h1>Contact Us</h1>
-      <br />  <br />
-      <br />  <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       <form
         action="https://api.web3forms.com/submit"
@@ -33,13 +49,8 @@
           name="access_key"
           value="2900ca21-6ef5-4010-95dd-8593939f93c1"
         />
-        <input
-          type="text"
-          color: "black"
-          placeholder="Your Name"
-          class="contact-inputs"
-          required
-        />
+        <input type="text" color: "black" placeholder="Your Name"
+        class="contact-inputs" required />
         <input
           type="email"
           placeholder="Your Email"
@@ -54,7 +65,7 @@
         />
         <textarea
           name="message"
-          style = "font-size: 16px; color: black;"
+          style="font-size: 16px; color: black"
           placeholder="Your Message"
           class="contact-inputs"
           required
